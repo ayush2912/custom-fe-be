@@ -15,6 +15,7 @@ metadata:
     alb.ingress.kubernetes.io/success-codes: '200'
     alb.ingress.kubernetes.io/healthy-threshold-count: '2'
     alb.ingress.kubernetes.io/unhealthy-threshold-count: '2'
+    alb.ingress.kubernetes.io/subnets: 'subnet-0d4aa5966abe0e024, subnet-080dd125349f6d200'
 spec:
   ingressClassName: alb
   rules:
