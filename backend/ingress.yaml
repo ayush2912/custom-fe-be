@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: ingress
+  name: ingress-backend
   namespace: my-app
   annotations:
     kubernetes.io/ingress.class: alb
@@ -27,12 +27,4 @@ spec:
                 name: backend
                 port:
                   number: 5000
-    - http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: frontend
-                port:
-                  number: 3000
+
