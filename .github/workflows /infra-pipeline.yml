@@ -2,8 +2,8 @@ name: Node js app deploy to EKS
 on:
   push:
     branches: [ "main" ]
-    paths:
-     - 'infra/**'
+    # paths:
+    #  - 'infra/**'
 
 
 jobs:
