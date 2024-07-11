@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket         = "my-test-fbp"
-    key            = "fbp/terraform.tfstate"
+    bucket         = "test-iamop"
+    key            = "fb/terraform.tfstate"
     region         = "us-east-1"
      
   }
