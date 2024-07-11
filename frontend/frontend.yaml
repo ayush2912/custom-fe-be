@@ -20,8 +20,8 @@ spec:
           ports:
           - containerPort: 3000
           env:
-          - name: REACT_APP_SERVER_URL
-            value: ""
+          - name: backendUrl
+            value: "http://backend.my-app:5000"
 
 ---
 apiVersion: v1
