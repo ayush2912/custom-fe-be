@@ -13,6 +13,7 @@ function App() {
   const handleClick = async () => {
     setLoading(true); // Set loading state to true while request is being made
     try {
+      console.log(backendUrl);
       const res = await axios.get(`${backendUrl}/api/getJoke`);
       setResponse(res.data);
     } catch (error) {
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div className="container">
-      <h1 className="heading">You are viewing the frontend.</h1>
+      <h1 className="heading">You are viewing the Ayush frontend.</h1>
       <div className="content">
         <p className="info">Need a smile? Click here for a quick mood lifter!</p>
         <button className="button" onClick={handleClick} disabled={loading}>
