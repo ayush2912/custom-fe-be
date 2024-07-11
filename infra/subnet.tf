@@ -35,3 +35,4 @@ resource "aws_default_subnet" "default_az4" {
     "kubernetes.io/cluster/my-cluster" = "shared"
   }
 }
+
