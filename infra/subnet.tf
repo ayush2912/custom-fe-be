@@ -36,3 +36,5 @@ resource "aws_default_subnet" "default_az4" {
   }
 }
 
+
+
