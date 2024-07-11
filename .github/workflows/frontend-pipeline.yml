@@ -43,6 +43,7 @@ jobs:
         run: |
 
           cd frontend/
+          kubectl apply -f namespace.yaml
           kubectl apply -f frontend.yaml
           kubectl apply -f ingress.yaml
 
