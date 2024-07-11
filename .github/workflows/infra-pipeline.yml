@@ -2,8 +2,8 @@ name: Node js app deploy to EKS
 on:
   push:
     branches: [ "main" ]
-    paths:
-     - 'infra/**'
+    # paths:
+    #  - 'infra/**'
 
 
 jobs:
@@ -20,8 +20,8 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
    
-    - name: directory 
-      run: cd infra/
+    # - name: directory 
+    #   run: cd infra/
     
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
