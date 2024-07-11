@@ -110,6 +110,6 @@ jobs:
 
     - name: Deploy to EKS
       run: |
-         # kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/high-availability-1.21+.yaml
-
+           kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/high-availability-1.21+.yaml
+           kubectl create namespace my-app
            kubectl get pods -n kube-system
