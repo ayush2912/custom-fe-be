@@ -23,7 +23,6 @@ spec:
           - name: REACT_APP_SERVER_URL
             value: ""
 
-
 ---
 apiVersion: v1
 kind: Service
