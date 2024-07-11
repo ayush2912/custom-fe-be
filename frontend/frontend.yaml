@@ -19,6 +19,7 @@ spec:
           image: 381492217945.dkr.ecr.us-east-1.amazonaws.com/frontend-test:latest
           ports:
           - containerPort: 3000
+
           env:
           - name: backendUrl
             value: "http://backend.my-app:5000"
