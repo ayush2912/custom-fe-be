@@ -23,7 +23,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v1
       - name: Build and push Docker image
         env:
-          ECR_REGISTRY: 590183924135.dkr.ecr.us-east-1.amazonaws.com
+          ECR_REGISTRY: 381492217945.dkr.ecr.us-east-1.amazonaws.com
           IMAGE_NAME: frontend-test
         run: |
           cd frontend/ && docker build -t $ECR_REGISTRY/$IMAGE_NAME:latest  .
