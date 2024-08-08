@@ -145,7 +145,7 @@ resource "aws_eks_node_group" "my_nodes" {
 resource "aws_eks_addon" "coredns" {
   cluster_name = aws_eks_cluster.my_cluster.name
   addon_name   = "coredns"
-  addon_version = "v1.11.1-eksbuild.9"
+  addon_version = "v1.11.1-eksbuild.8"
   resolve_conflicts_on_update = "PRESERVE"
 }
 
