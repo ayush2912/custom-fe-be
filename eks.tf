@@ -41,7 +41,7 @@ resource "aws_cloudwatch_log_group" "eks_cluster_logs" {
 resource "aws_eks_cluster" "my_cluster" {
   name     = "my-cluster"
   role_arn = aws_iam_role.my_cluster.arn
-  version  = "1.29"
+  version  = "1.30"
   vpc_config {
     subnet_ids = [var.subnet_id_3,var.subnet_id_4]
 
