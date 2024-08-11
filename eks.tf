@@ -145,18 +145,18 @@ resource "aws_eks_node_group" "my_nodes" {
 resource "aws_eks_addon" "coredns" {
   cluster_name = aws_eks_cluster.my_cluster.name
   addon_name   = "coredns"
-  addon_version = "v1.11.1-eksbuild.8"
+  addon_version = "v1.11.1-eksbuild.9"
   resolve_conflicts_on_update = "PRESERVE"
 }
 
 resource "aws_eks_addon" "kube_proxy" {
   cluster_name = aws_eks_cluster.my_cluster.name
   addon_name   = "kube-proxy"
-  addon_version = "v1.29.1-eksbuild.2"
+  addon_version = "v1.30.0-eksbuild.3"
 }
 
 resource "aws_eks_addon" "vpc_cni" {
   cluster_name = aws_eks_cluster.my_cluster.name
   addon_name   = "vpc-cni"
-  addon_version = "v1.18.1-eksbuild.3"
+  addon_version = "v1.18.3-eksbuild.1"
 }
