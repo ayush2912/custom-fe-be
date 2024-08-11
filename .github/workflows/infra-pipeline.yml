@@ -33,23 +33,23 @@ jobs:
     - name: Terraform Plan
       run: terraform plan
     - name: terraform apply
-      # run: terraform apply -auto-approve
-      run: terraform destroy --auto-approve
+      run: terraform apply -auto-approve
+      # run: terraform destroy --auto-approve
       
     
 
 
-    # - name: Setup EKS Kubectl
-    #   uses: zachguo/setup-eks-kubectl@v1
-    #   with:
-    #     cluster: my-cluster 
-    #     region: us-east-1
+    - name: Setup EKS Kubectl
+      uses: zachguo/setup-eks-kubectl@v1
+      with:
+        cluster: my-cluster 
+        region: us-east-1
 
 
 
 
-    # - name: Update kube config
-    #   run: aws eks update-kubeconfig --name my-cluster --region us-east-1
+    - name: Update kube config
+      run: aws eks update-kubeconfig --name my-cluster --region us-east-1
 
     # - name: installing eksctl
     #   run:
